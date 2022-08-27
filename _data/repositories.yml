@@ -1,12 +1,6 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - bemc22
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - bemc22/JR2net
+  - bemc22/DeepLDSIR
