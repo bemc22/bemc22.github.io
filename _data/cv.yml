@@ -15,7 +15,7 @@
       institution: Universidad Industrial de Santander, Bucaramanga, Colombia
       year: 2022
       description:
-        - Description 1.
+        # - Description 1.
 
 - title: Experience
   type: time_table
