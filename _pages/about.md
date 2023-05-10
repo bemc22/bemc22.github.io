@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Student in <a href='http://hdspgroup.com'>HDSP Group</a>. 
+subtitle: Master Student in <a href='http://hdspgroup.com'>HDSP Group</a>. 
 
 profile:
   align: right
