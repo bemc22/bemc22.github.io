@@ -11,11 +11,14 @@
 - title: Education
   type: time_table
   contents:
+    - title: M.S. in Computer Science
+      institution: Universidad Industrial de Santander, Bucaramanga, Colombia
+      year: 2023 - Now
     - title: B.S. in Systems Engineering
       institution: Universidad Industrial de Santander, Bucaramanga, Colombia
       year: 2022
       description:
-        # - Description 1.
+         - <i>Cum laude<i>.
 
 - title: Experience
   type: time_table
@@ -24,7 +27,7 @@
       institution: Universidad Industrial de Santander, Bucaramanga, Colombia
       year: 2020 - Now
 
-- title: Honors and Awards
+- title:  
   type: time_table
   contents:
     - year: 2017
