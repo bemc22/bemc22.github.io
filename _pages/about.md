@@ -15,4 +15,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I have a B.S. in systems engineering from the Universidad Industrial de Santander, Bucaramanga, Colombia, where I am working toward a master’s degree in Computer Science. My research interests include inverse problems, mathematical optimization, and deep learning.
+I have a BSc. and MSc. in systems engineering from the Universidad Industrial de Santander, Bucaramanga, Colombia, where I am working in computer science research with the Universidad Industrial de Santander. My research interests include inverse problems, mathematical optimization, and deep learning.
