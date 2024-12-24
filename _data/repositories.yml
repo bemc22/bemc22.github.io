@@ -2,6 +2,7 @@ github_users:
   - bemc22
 
 github_repos:
+  - bemc22/GeneralizedR2R
   - bemc22/JR2net
   - bemc22/DeepLDSIR
   - bemc22/AdaHSI
