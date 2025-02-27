@@ -1,14 +1,11 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - bemc22
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - bemc22/GeneralizedR2R
+  - bemc22/JR2net
+  - bemc22/DeepLDSIR
+  - bemc22/AdaHSI
+  - pycolibri/pycolibri

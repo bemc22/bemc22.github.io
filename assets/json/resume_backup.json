@@ -1,0 +1,73 @@
+{
+    "basics": {
+      "name": "Brayan Monroy",
+      "label": "Research Scientist",
+      "image": "",
+      "summary": "Colombian research scientist, interested in computational imaging and inverse problems",
+      "profiles": [
+        {
+          "network": "Twitter",
+          "username": "bemc22",
+          "url": "https://twitter.com/bemc22"
+        }
+      ]
+    },
+    "work": [
+      {
+        "name": "High Dimensional Signal Processing Group, Universidad Industrial de Santander",
+        "position": "Research",
+        "location": "Colombia",
+        "url": "https://example.com",
+        "startDate": "2020-08",
+        "summary": "Working in deep learning algorithms for HDR image reconstruction from modulo-based imaging sensors and self-supervised strategies for linear and non-linear imaging inverse problems.",
+        "highlights": ["Deep Learning, Inverse Problems"]
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Industrial de Santander",
+        "location": "Colombia",
+        "area": "Cum Laude",
+        "studyType": "BSc in Systems Engineering",
+        "startDate": "2028-02",
+        "endDate": "2022-8",
+        "score": "4.59"
+      },
+      {
+        "institution": "Universidad Industrial de Santander",
+        "location": "Colombia",
+        "studyType": "MSc in Computer Science",
+        "startDate": "2022-03",
+        "endDate": "2024-12",
+        "score": "4.97"
+      }
+    ],
+    "awards": [
+      {
+        "title": "Andres Bello Award",
+        "date": "2017-01",
+        "url": "https://www.mineducacion.gov.co/1759/articles-363511_recurso_1.pdf",
+        "awarder": "Ministry of National Education, Colombia"
+      }
+    ],
+    "languages": [
+      {
+        "language": "Spanish",
+        "fluency": "Native speaker",
+        "icon": ""
+      },
+      {
+        "language": "English",
+        "fluency": "Fluent",
+        "icon": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Professor Jorge Bacca",
+        "icon": "fa-solid fa-laptop",
+        "reference": "Associate Professor, Universidad Industrial de Santander"
+      }
+    ]
+  }
+  
