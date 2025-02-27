@@ -1,6 +1,8 @@
 github_users:
   - bemc22
 
+repo_description_lines_max: 2
+
 github_repos:
   - bemc22/GeneralizedR2R
   - bemc22/JR2net
