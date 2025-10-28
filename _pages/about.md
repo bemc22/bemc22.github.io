@@ -23,4 +23,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I hold a B.S. and MSc. in Systems Engineering from the Universidad Industrial de Santander (UIS) in Bucaramanga, Colombia, and am currently pursuing a PhD in Computer Science at the same institution. My research at UIS focuses on imaging inverse problems, mathematical optimization, and deep learning applications. My research interests include inverse problems, mathematical optimization, and deep learning.
+I hold a B.S. and M.Sc. in Systems Engineering from the Universidad Industrial de Santander (UIS) in Bucaramanga, Colombia, and am currently pursuing a Ph.D. in Computer Science at the same institution. My research at UIS focuses on self-supervised techniques for imaging inverse problems involving linear and non-linear forward operators. I am also an active contributor to <a href='https://deepinv.github.io/deepinv/'>DeepInverse</a>, an open-source library for solving inverse problems with deep learning.
