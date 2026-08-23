@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-beyond-formal-limits",
+        },{id: "post-2-3-5-7",
+      
+        title: "2 3 5 7",
+      
+      description: "She was only counting, and we forgot how to listen",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2026/2357/";
+        
+      },
+    },{id: "post-beyond-formal-limits",
       
         title: "beyond formal limits",
       
