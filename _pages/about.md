@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D Student in <a href='http://hdspgroup.com'>HDSP Group</a>.
+subtitle: Ph.D Student in <a href='http://hdspgroup.com'>HDSP Group</a> & <a href='http://pigroupuis.github.io/pigroup-research'>PiGroup</a>.
 
 profile:
   align: right
