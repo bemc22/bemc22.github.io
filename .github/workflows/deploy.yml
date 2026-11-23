@@ -57,7 +57,18 @@ on:
       - "!FAQ.md"
       - "!INSTALL.md"
       - "!README.md"
+  schedule:
+    - cron: "17 4 1 * *"
   workflow_dispatch:
+    inputs:
+      refresh_trophies:
+        description: Refresh the cached GitHub trophies before deploying
+        type: boolean
+        default: false
+
+concurrency:
+  group: deploy-site-${{ github.ref }}
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -66,14 +77,31 @@ jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
+    env:
+      REFRESH_TROPHIES: >-
+        ${{ github.event_name == 'schedule' ||
+            (github.event_name == 'workflow_dispatch' && inputs.refresh_trophies && github.ref_name == github.event.repository.default_branch) }}
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          ref: ${{ env.REFRESH_TROPHIES == 'true' && github.ref || github.sha }}
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          ruby-version: "3.3"
           bundler-cache: true
+      - name: Refresh cached GitHub trophies
+        id: trophy_cache
+        if: env.REFRESH_TROPHIES == 'true'
+        run: |
+          staged_cache=$(mktemp -d)
+          if bundle exec ruby bin/refresh-trophies.rb "$staged_cache"; then
+            cp -R "$staged_cache/." assets/img/trophies/
+            echo "validated=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Trophy refresh failed. Using the previously committed SVGs."
+          fi
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
@@ -96,6 +124,16 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Commit refreshed trophies
+        if: steps.trophy_cache.outputs.validated == 'true'
+        run: |
+          git add -- assets/img/trophies/
+          if git diff --cached --quiet -- assets/img/trophies/; then
+            exit 0
+          fi
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -m 'Refresh cached GitHub trophies' -- assets/img/trophies/
+          git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
